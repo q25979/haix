@@ -17,11 +17,11 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 define('APP_DEBUG',True);
 
+// 默认模块
+$_GET['m'] = 'Admin';
+
 // 定义应用目录
 define('APP_PATH','./Application/');
-
-// 绑定控制器,初始控制器
-$_GET['c'] = "Login";
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

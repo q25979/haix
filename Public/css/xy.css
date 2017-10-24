@@ -1,0 +1,41 @@
+body {
+	background: url(../images/1.jpg);
+}
+
+.xy-login {
+	width: 80%;
+	margin: 0 auto;
+	transform: translateY(50%);
+}
+.xy-span {
+	cursor: pointer;
+	background: #337AB7;
+	color: white;
+}
+.xy-span__cursor {
+	background: #EEEEEE;
+	color: #555555;
+	cursor: not-allowed;
+}
+.xy-span:hover {
+	background: #286090;
+}
+.xy-span__cursor:hover {
+	background: #EEEEEE;
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+	.xy-login {
+		width: 400px;
+	}
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+}
+
