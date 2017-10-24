@@ -1,4 +1,4 @@
-body {
+.login-body {
 	background: url(../images/1.jpg);
 }
 
@@ -23,6 +23,59 @@ body {
 .xy-span__cursor:hover {
 	background: #EEEEEE;
 }
+
+.xy-table th {
+	text-align: center;
+}
+.xy-table, .xy-page__div {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.xy-page__sum {
+	border: 0 !important;
+}
+.xy-page__sum:hover {
+	background-color: white !important;
+}
+.pager {
+	text-align: left;
+}
+
+.xy-float-right {
+	float: right;
+}
+
+/* 生成的参赛卡 */
+.card_title {
+	border-bottom: 1px solid #ddd;
+	padding: 15px 0 10px 0;
+	background: #337AB7;
+	margin: 0 0 10px;
+	color: white;
+	font-weight: bold;
+}
+.xy-icon__save {
+	margin-right: 20px;
+	color: white;
+}
+#img_container {
+	padding-bottom: 20px;
+}
+#img_container canvas {
+	display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+/* 生成的参赛卡结束 */
 
 /* 小屏幕（平板，大于等于 768px） */
 @media (min-width: 768px) {
