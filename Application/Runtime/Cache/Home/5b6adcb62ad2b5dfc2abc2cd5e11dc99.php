@@ -33,10 +33,9 @@
 							class="form-control"
 							name="code"
 							placeholder="请输入你的验证码"
-							aria-describedby="basic-addon2"
 						/>
-						<span class="input-group-addon xy-span xy-span__cursor1" id="basic-addon2">
-							获取验证码
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">获取验证码</button>
 						</span>
 					</div>
 				</div>

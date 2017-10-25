@@ -6,11 +6,13 @@
 
 	<link rel="stylesheet" type="text/css" href="/haix/Public/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="/haix/Public/css/xy.css" />
+	<link rel="stylesheet" type="text/css" href="/haix/Public/css/jquery-confirm.min.css" />
 
 	<script type="text/javascript" src="/haix/Public/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="/haix/Public/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/haix/Public/js/html2canvas.min.js"></script>
 	<script type="text/javascript" src="/haix/Public/js/card.js"></script>
+	<script type="text/javascript" src="/haix/Public/js/jquery-confirm.min.js"></script>
 </head>
 <body>
 	<div class="xy-table__container">
@@ -32,7 +34,7 @@
 
 				<tr>
 					<td>1</td>
-					<td>张三</td>
+					<td>张三张三张三张三张三张三张三张三张三</td>
 					<td>18159850878</td>
 					<td>福建龙岩</td>
 					<td>1254-52-41</td>
@@ -152,7 +154,12 @@
     				<li><a href="#">2</a></li>
     				<li><a href="#">下一张</a></li>
     				<li class="disabled"><a href="#" class="xy-page__sum">共 2 张</a></li>
-    				<li class="xy-float-right"  data-toggle="modal" data-target=".bs-example-modal-lg">
+    				<li
+    					class="xy-float-right"
+    					data-toggle="modal"
+    					data-target=".bs-example-modal-lg"
+    					onclick="buildImg()"
+    				>
     					<a href="#">获取参赛卡</a>
     				</li>
   				</ul>
@@ -172,7 +179,11 @@
 		<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
   			<h3 class="text-center card_title">参赛卡下载
-  				<span class="glyphicon glyphicon-save pull-right xy-icon__save" aria-hidden="true">
+  				<span
+  					class="glyphicon glyphicon-save pull-right xy-icon__save"
+  					aria-hidden="true"
+  					id="saveImgSpan"
+  				>
   				</span>
   			</h3>
   			<div id="img_container" class="text-center">

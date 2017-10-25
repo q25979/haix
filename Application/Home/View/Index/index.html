@@ -6,11 +6,13 @@
 
 	<css href="__PUBLIC__/css/bootstrap.min.css" />
 	<css href="__PUBLIC__/css/xy.css" />
+	<css href="__PUBLIC__/css/jquery-confirm.min.css" />
 
 	<js href="__PUBLIC__/js/jquery-3.2.1.min.js" />
 	<js href="__PUBLIC__/js/bootstrap.min.js" />
 	<js href="__PUBLIC__/js/html2canvas.min.js" />
 	<js href="__PUBLIC__/js/card.js" />
+	<js href="__PUBLIC__/js/jquery-confirm.min.js" />
 </head>
 <body>
 	<div class="xy-table__container">
@@ -32,7 +34,7 @@
 
 				<tr>
 					<td>1</td>
-					<td>张三</td>
+					<td>张三张三张三张三张三张三张三张三张三</td>
 					<td>18159850878</td>
 					<td>福建龙岩</td>
 					<td>1254-52-41</td>
@@ -152,7 +154,12 @@
     				<li><a href="#">2</a></li>
     				<li><a href="#">下一张</a></li>
     				<li class="disabled"><a href="#" class="xy-page__sum">共 2 张</a></li>
-    				<li class="xy-float-right"  data-toggle="modal" data-target=".bs-example-modal-lg">
+    				<li
+    					class="xy-float-right"
+    					data-toggle="modal"
+    					data-target=".bs-example-modal-lg"
+    					onclick="buildImg()"
+    				>
     					<a href="#">获取参赛卡</a>
     				</li>
   				</ul>

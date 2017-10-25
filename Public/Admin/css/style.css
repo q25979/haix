@@ -1,0 +1,38 @@
+.member_title {
+	margin: 0;
+	background: #337AB7;
+	color: white;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+.list-table th {
+	text-align: center;
+	background-color: #F8F8F8;
+}
+.list-td a:nth-child(2) {
+	margin: 0 10px;
+}
+.list-btn {
+	transform: translateY(20%);
+	margin-left: 10px;
+}
+.list-btn+span {
+	transform: translateY(70%);
+	margin-right: 20px;
+}
+.list-page {
+	margin: 0 auto;
+	margin-top: -20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.li-add__btn span {
+	background: red;
+	font-size: 18pt;
+	color: #337AB7;
+}
+
+.member-div {
+	padding: 20px;
+}

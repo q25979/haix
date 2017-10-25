@@ -7,22 +7,6 @@
 	margin: 0 auto;
 	transform: translateY(50%);
 }
-.xy-span {
-	cursor: pointer;
-	background: #337AB7;
-	color: white;
-}
-.xy-span__cursor {
-	background: #EEEEEE;
-	color: #555555;
-	cursor: not-allowed;
-}
-.xy-span:hover {
-	background: #286090;
-}
-.xy-span__cursor:hover {
-	background: #EEEEEE;
-}
 
 .xy-table th {
 	text-align: center;
