@@ -27,9 +27,9 @@
 	margin-bottom: 30px;
 	text-align: center;
 }
-.li-add__btn span {
-	background: red;
-	font-size: 18pt;
+
+.li-add__btn {
+	font-size: 25px;
 	color: #337AB7;
 }
 

@@ -15,16 +15,6 @@
             <blockquote class="layui-elem-quote">欢迎使用 广东海翔赛鸽后台后台管理</blockquote>
 
             <nav class="navbar navbar-default">
-              <a class="navbar-brand" href="#">会员搜索</a>
-              <form action="" class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="请输入名字" />
-                </div>
-                <button type="submit" class="btn btn-default">搜索</button>
-              </form>
-            </nav>
-
-            <nav class="navbar navbar-default">
               <button class="btn btn-danger list-btn" id="selectDel">批量删除</button>
 
               <button

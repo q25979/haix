@@ -4,7 +4,7 @@
     	<h3 class="text-center member_title">参赛卡录入</h3>
 
     	<div class="member-div">
-			<table class="table table-bordered list-table text-center">
+			<table class="table table-bordered list-table text-center" id="input-table">
 	    		<tr>
 	    			<th>序号</th>
 	    			<th>参赛鸽足环号</th>
@@ -12,6 +12,7 @@
 	    			<th>小团体</th>
 	    			<th>大团体</th>
 	    			<th>备注</th>
+	    			<th>操作</th>
 	    		</tr>
 
 	    		<tr>
@@ -21,13 +22,34 @@
 	    			<td><input type="text" class="form-control"></td>
 	    			<td><input type="text" class="form-control"></td>
 	    			<td><textarea class="form-control" rows="1"></textarea></td>
+	    			<td>
+						<a href="#" title="删除" class="card-del__btn">
+	                        <span class="glyphicon glyphicon-trash"></span>
+                    	</a>
+                    	<a href="#" title="更新">
+                    		<span class="glyphicon glyphicon-refresh"></span>
+                    	</a>
+	    			</td>
 	    		</tr>
 	    	</table>
 
-	    	<div class="li-add__btn pull-right">
-	    		<span class="glyphicon glyphicon-plus"></span>
+	    	<div class="li-add__btn clearfix">
+	    		<span class="glyphicon glyphicon-plus pull-right" onclick="addCardLi()"></span>
 	    	</div>
+
+	    	<button class="btn btn-primary">录入数据</button>
+	    	<button class="btn btn-danger">清空数据</button>
     	</div>
     </div>
   </div>
 </div>
+
+<!-- js调用 -->
+<script>
+	// 卡片录入删除按钮
+	$(function () {
+		delCardLi();
+	});
+</script>
+
+<script src="js/member-input.js"></script>
