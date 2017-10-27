@@ -19,6 +19,7 @@ define('APP_DEBUG',True);
 
 // 默认模块
 $_GET['m'] = 'Admin';
+$_GET['c'] = 'Login';
 
 // 定义应用目录
 define('APP_PATH','./Application/');

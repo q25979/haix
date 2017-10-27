@@ -15,7 +15,7 @@ $(function () {
  * 删除数据
  * confirm 传一个确认的方法
  */
-function listDel(confirm) {
+function listDel(confirmFn) {
 	$.confirm({
 		title: "确认删除",
 		content: "删除后数据不可恢复,是否继续",
@@ -24,7 +24,7 @@ function listDel(confirm) {
 		confirmButtonClass: 'btn-info',
 		cancelButtonClass: 'btn-danger',
 		confirm: function() {
-			confirm();
+			confirmFn();
 		},
 		cancel: function() {}
 	});

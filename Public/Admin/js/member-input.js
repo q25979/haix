@@ -1,43 +1,72 @@
-/**
- * 添加输入列
- */
-function addCardLi() {
-	var count = $("#input-table tbody tr").length;
+var add_tr =
+`
+<tr>
+	<td><input readonly class="form-control text-center" name="NO" size="3" value="1" /></td>
+	<td><input type="text" class="form-control"></td>
+	<td><input type="text" class="form-control"></td>
+	<td><input type="text" class="form-control"></td>
+	<td><input type="text" class="form-control"></td>
+	<td><textarea class="form-control" rows="1"></textarea></td>
+	<td>
+		<a href="#" title="删除" class="card-del__btn" onClick="deltr(this)">
+		    <span class="glyphicon glyphicon-trash"></span>
+	    </a>
+	    <a href="#" title="更新">
+	        <span class="glyphicon glyphicon-refresh"></span>
+	    </a>
+	</td>
+</tr>
+`
+;
 
-	var tr =
-	`
-		<tr>
-			<td>${count}</td>
-			<td><input type="text" class="form-control" /></td>
-			<td><input type="text" class="form-control" /></td>
-			<td><input type="text" class="form-control" /></td>
-			<td><input type="text" class="form-control" /></td>
-			<td><textarea class="form-control" rows="1"></textarea></td>
-			<td>
-				<a href="#" title="删除" class="card-del__btn">
-					<span class="glyphicon glyphicon-trash"></span>
-				</a>
-				<a href="#" title="更新">
-                    <span class="glyphicon glyphicon-refresh"></span>
-                </a>
-			</td>
-		</tr>
-	`;
+$(function () {
+	var show_count = 500;   //要显示的条数
+	var count = 1;    //递增的开始值，这里是你的ID
 
-	$("#input-table tbody").append(tr);
-	delCardLi();
+	// 添加列
+	$("#btn_addtr").click(function () {
+
+		var length = $("#dynamicTable tbody tr").length;
+		// alert(length);
+
+		if (length < show_count)    //点击时候，如果当前的数字小于递增结束的条件
+		{
+			$(add_tr).appendTo("#dynamicTable tbody");
+			changeIndex();	//更新行号
+		}
+	});
+
+	// 清空数据按钮
+	$("#clearDataBtn").click(function () {
+		listDel(function () {
+			allDelTr();
+		});
+	});
+
+
+});
+
+function changeIndex() {
+	var i = 1;
+
+	$("#dynamicTable tbody tr").each(function () { //循环tab tbody下的tr
+		$(this).find("input[name='NO']").val(i++);//更新行号
+	});
+}
+
+function deltr(opp) {
+
+	$(opp).parent().parent().remove();//移除当前行
+	changeIndex();
 }
 
 /**
- * 删除单个列
- * @return {[type]} [description]
+ * 数据全部删除
  */
-function delCardLi() {
-	$(".card-del__btn").each((index) => {
+function allDelTr() {
+	var length = $("#dynamicTable tbody tr").length;
 
-		$($(".card-del__btn")[index]).click(() => {
-			console.log(index);
-			$($("#input-table tbody tr")[index+1]).remove();
-		});
+	$("#dynamicTable tbody tr").each(function () {
+		$(this).remove();
 	});
 }

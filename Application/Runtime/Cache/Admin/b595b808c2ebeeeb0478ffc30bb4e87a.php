@@ -13,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="/haix/Public/css/font.css" />
     <link rel="stylesheet" type="text/css" href="/haix/Public/css/xadmin.css" />
 
-    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-
+    <script type="text/javascript" src="/haix/Public/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/haix/Public/js/xadmin.js"></script>
     <script type="text/javascript" src="/haix/Public/lib/layui/layui.js"></script>
 </head>

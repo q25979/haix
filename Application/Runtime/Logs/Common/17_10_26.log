@@ -1,0 +1,42 @@
+[ 2017-10-26T23:05:52+08:00 ] ::1 /haix/admin.php/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+ERR: 无法加载模块:Index
+
+[ 2017-10-26T23:50:07+08:00 ] ::1 /haix/admin.php/%3C/haix/admin.php/Admin/Login/verify.html%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+ERR: 无法加载模块:
+
+[ 2017-10-26T23:51:34+08:00 ] ::1 /haix/admin.php/U('Login/verify')
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+ERR: 无法加载模块:U('Login
+
+[ 2017-10-26T23:51:44+08:00 ] ::1 /haix/admin.php/U('Login/verify')
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001597s ]
+ERR: 无法加载模块:U('Login
+
+[ 2017-10-26T23:51:45+08:00 ] ::1 /haix/admin.php/%3C/haix/admin.php/Admin/Login/verify.html%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+ERR: 无法加载模块:
+
+[ 2017-10-26T23:51:46+08:00 ] ::1 /haix/admin.php/%3C/haix/admin.php/Admin/Login/verify.html%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+ERR: 无法加载模块:
+
+[ 2017-10-26T23:51:47+08:00 ] ::1 /haix/admin.php/%3C/haix/admin.php/Admin/Login/verify.html%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+ERR: 无法加载模块:
+
