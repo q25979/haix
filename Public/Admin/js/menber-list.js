@@ -65,6 +65,10 @@ function updataView() {
 
                     	// 设置数据
                         userTable.listTable = data.data;
+                        userTable.mostSelect();
+
+                        // 初始化化都是不选
+                        $("#userTable :checkbox").prop("checked", false);
                         // 设置总数据
                         $("#sumData").text(`共有 ${data.count} 条数据`);
                     }
@@ -87,6 +91,18 @@ function updataView() {
                         }
                     });
                 });
+			},
+
+			// 批量删除
+			mostSelect() {
+				$("#allSelect").click(() => {
+					// 全选与全不选
+					if ($("#allSelect").prop("checked")) {
+						$("#userTable :checkbox").prop("checked", true);
+					} else {
+						$("#userTable :checkbox").prop("checked", false);
+					}
+				});
 			}
 		}
 	});

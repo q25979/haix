@@ -32,7 +32,7 @@
 
             <table class="table table-bordered list-table text-center" id="userTable">
               <tr>
-                <th><input type="checkbox"></th>
+                <th><input type="checkbox" id="allSelect"></th>
                 <th>序号</th>
                 <th>鸽主名称</th>
                 <th>联系电话</th>
@@ -41,7 +41,7 @@
               </tr>
 
               <tr v-for="(item, index) in listTable">
-                <td><input type="checkbox"></td>
+                <td><input type="checkbox" class="select_box"></td>
                 <td>{{ (index+1) + (curr * 10) }}</td>
                 <td>{{ item.name }}</td>
                 <td>{{ item.tel }}</td>

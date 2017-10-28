@@ -26,9 +26,9 @@
 			</h3>
 
 			<div class="table-header">
-				<span><strong>鸽主名称：张三</strong></span>
-				<span><strong>联系电话：15184854852</strong></span>
-				<span><strong>地区：福建龙岩</strong></span>
+				<span><strong>鸽主名称：<?php echo ($user_name); ?></strong></span>
+				<span><strong>联系电话：<?php echo ($user_tel); ?></strong></span>
+				<span><strong>地区：<?php echo ($user_addr); ?></strong></span>
 			</div>
 
 			<table class="table table-bordered table-condensed text-center">
@@ -41,126 +41,14 @@
 					<th>备注</th>
 				</tr>
 
-				<tr>
-					<td>1</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>6</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>7</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>8</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>9</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>10</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>11</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>12</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>13</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>14</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>15</td>
-					<td>1254-52-41</td>
-					<td>灰</td>
-					<td>A</td>
-					<td>A</td>
-					<td></td>
-				</tr>
+				<?php if(is_array($data_list)): foreach($data_list as $key=>$vo): ?><tr>
+						<td><?php echo ($key+1); ?></td>
+						<td><?php echo ($vo["number"]); ?></td>
+						<td><?php echo ($vo["color"]); ?></td>
+						<td><?php echo ($vo["small_group"]); ?></td>
+						<td><?php echo ($vo["big_group"]); ?></td>
+						<td><?php echo ($vo["remarks"]); ?></td>
+					</tr><?php endforeach; endif; ?>
 			</table>
 
 			<img src="<?php echo ($card_img); ?>/images/haix-flag.png" class="xy-flag">
@@ -186,17 +74,17 @@
 		<div class="xy-page__div">
 			<nav aria-label="...">
   				<ul class="pager">
-    				<li><a href="#">上一张</a></li>
-    				<li><a href="#">2</a></li>
-    				<li><a href="#">下一张</a></li>
-    				<li class="disabled xy-page__sum">共 2 张</li>
+    				<li id="aBefore"><a href="javascript:">上一张</a></li>
+    				<li><a href="javascript:" id="pageCount"><?php echo ($page); ?></a></li>
+    				<li id="aNext"><a href="javascript:">下一张</a></li>
+    				<li class="disabled xy-page__sum">共 <?php echo ($card_count); ?> 张参赛卡</li>
     				<li
     					class="xy-float-right"
     					data-toggle="modal"
     					data-target=".bs-example-modal-lg"
     					onclick="buildImg()"
     				>
-    					<a href="#">获取参赛卡</a>
+    					<a href="javascript:">获取参赛卡</a>
     				</li>
   				</ul>
 			</nav>
@@ -230,5 +118,39 @@
 <!-- 参赛卡图片 -->
 
 	<!-- 参赛卡图片 -->
+
+	<script type="text/javascript" src="/haix/Public/js/config.js"></script>
+	<script>
+		var page = parseInt($("#pageCount").text());
+
+		console.log(<?php echo ($card_count); ?>);
+
+		$("#aBefore").click(() => {
+			if (page == 1) {
+				$.dialog({
+					title: "提示",
+					content: "前面已经没有了哦!",
+				});
+
+				return;
+			}
+
+			page--;
+			$("#aBefore a").attr("href", `${app.serverUrl}index.php/Home/Index/index?page=${page}`);
+		});
+		$("#aNext").click(() => {
+			if (page >= <?php echo ($card_count); ?>) {
+				$.dialog({
+					title: "提示",
+					content: "后面已经没有了哦"
+				});
+
+				return;
+			}
+
+			page++;
+			$("#aNext a").attr("href", `${app.serverUrl}index.php/Home/Index/index?page=${page}`);
+		});
+	</script>
 </body>
 </html>

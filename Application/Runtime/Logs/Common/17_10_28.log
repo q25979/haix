@@ -1,0 +1,6 @@
+[ 2017-10-28T20:51:19+08:00 ] ::1 /haix/index.php/index.php/Home/Index/index?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+ERR: 无法加载模块:Index.php
+
