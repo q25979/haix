@@ -37,11 +37,4 @@ class LoginController extends Controller {
     		$this->ajaxReturn(false);
     	}
     }
-
-    // 连接数据库
-    public function link_mysql() {
-    	$user = M("admin");
-
-    	var_dump($user->select());
-    }
 }

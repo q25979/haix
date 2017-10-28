@@ -41,3 +41,7 @@
 	width: 49%;
 	height: 50px;
 }
+
+.userPage {
+	background: red !important;
+}

@@ -26,9 +26,9 @@
 			</h3>
 
 			<div class="table-header">
-				<span><strong>鸽主名称：</strong>张三</span>
-				<span><strong>联系电话：</strong>15184854852</span>
-				<span><strong>地区：</strong>福建龙岩</span>
+				<span><strong>鸽主名称：张三</strong></span>
+				<span><strong>联系电话：15184854852</strong></span>
+				<span><strong>地区：福建龙岩</strong></span>
 			</div>
 
 			<table class="table table-bordered table-condensed text-center">
@@ -163,14 +163,19 @@
 				</tr>
 			</table>
 
+			<img src="<?php echo ($card_img); ?>/images/haix-flag.png" class="xy-flag">
+
 			<div class="table-footer text-center clearfix">
 				<span class="pull-left"><strong>鸽主签名：</strong></span>
 				<span><strong>收鸽单位签章：</strong></span>
 				<div class="text-left">
-					<p><strong>注：此卡为观摩、参赛、领奖、领鸽凭证。盖章有效，请妥善保管。</strong></p>
 					<p>
-						<strong>电话：0597-82519688 传真：0754-82519689</strong>
-						<strong class="pull-right">地址：广东汕头金平区蛇莲街道玉井东三温</strong>
+						<strong>注：此卡为观摩、参赛、领奖、领鸽凭证。</strong>
+						<strong class="pull-right">官网网址：www.hxsggp.com</strong>
+					</p>
+					<p>
+						<strong>业务联系人：(陈小海)13318675828  &nbsp;&nbsp;公棚电话：0660-6754333</strong>
+						<strong class="pull-right">公棚地址：汕尾市海丰县城东镇后塘村</strong>
 					</p>
 				</div>
 			</div>
@@ -184,7 +189,7 @@
     				<li><a href="#">上一张</a></li>
     				<li><a href="#">2</a></li>
     				<li><a href="#">下一张</a></li>
-    				<li class="disabled"><a href="#" class="xy-page__sum">共 2 张</a></li>
+    				<li class="disabled xy-page__sum">共 2 张</li>
     				<li
     					class="xy-float-right"
     					data-toggle="modal"
@@ -211,10 +216,10 @@
 		<div class="modal-content">
   			<h3 class="text-center card_title">参赛卡下载
   				<span
-  					class="glyphicon glyphicon-save pull-right xy-icon__save"
+  					class="pull-right xy-icon__save"
   					aria-hidden="true"
   					id="saveImgSpan"
-  				>
+  				>点击下载
   				</span>
   			</h3>
   			<div id="img_container" class="text-center">

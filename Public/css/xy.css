@@ -1,5 +1,7 @@
 .login-body {
-	background: url(../images/1.jpg);
+	background: url(../images/card-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .xy-login {
@@ -7,19 +9,31 @@
 	margin: 0 auto;
 	transform: translateY(50%);
 }
+.card-title {
+	position: relative;
+	top: 130px;
+}
 
 .xy-table th {
 	text-align: center;
+}
+.xy-table tr {
+	font-weight: bold;
 }
 .xy-table {
 	padding: 5px 35px;
 	border-radius: 5px;
 	position: relative;
+	top: 50px;
 }
 
 .xy-table, .xy-page__div {
 	width: 80%;
 	margin: 0 auto;
+}
+.xy-page__div {
+	margin-top: 70px;
+	margin-bottom: 30px;
 }
 .xy-background {
 	position: absolute;
@@ -29,6 +43,14 @@
 	height: 100%;
 	z-index: -1;
 	border-radius: 5px;
+}
+.xy-flag {
+	position: absolute;
+	bottom: 5%;
+	right: 27%;
+	width: 15%;
+	min-height: 15%;
+	z-index: 1;
 }
 .table-footer {
 	margin-top: -15px;
@@ -44,12 +66,6 @@
 	border-color: #333 !important;
 }
 
-.xy-page__sum {
-	border: 0 !important;
-}
-.xy-page__sum:hover {
-	background-color: white !important;
-}
 .pager {
 	text-align: left;
 }
@@ -70,6 +86,19 @@
 .table-header>span:nth-child(2) {
 	margin: 0 40px;
 }
+.pager li>a {
+	background: #337AB7 !important;
+	color: white;
+}
+.pager li>a:hover {
+	background: #286090 !important;
+}
+.xy-page__sum {
+	border: 0 !important;
+	color: #286090 !important;
+	margin-left: 10px;
+}
+
 
 /* 生成的参赛卡 */
 .card_title {
@@ -83,6 +112,7 @@
 .xy-icon__save {
 	margin-right: 20px;
 	color: white;
+	cursor: pointer;
 }
 #img_container {
 	padding-bottom: 20px;

@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="/haix/Public/css/xy.css" />
 </head>
 <body class="login-body">
+	<h3 class="text-center card-title"><strong>广东海翔赛鸽公棚参赛卡领取系统</strong></h3>
 	<div class="panel panel-primary xy-login">
 		<div class="panel-heading"><h3 class="panel-title">参赛卡获取登录</h3></div>
 		<div class="panel-body">

@@ -10,7 +10,8 @@ class IndexController extends Controller {
     	$this->assign('public_url', C('PUBLIC_URL'));
 
     	// 验证登录信息
-    	$this->verify_info();
+    	// $this->verify_info();
+        $this->display();
     }
 
     // 验证登录信息
