@@ -27,13 +27,13 @@
                 添加
               </button>
 
-              <span class="pull-right">共 30 条数据</span>
+              <span class="pull-right" id="sumData"></span>
             </nav>
 
             <table class="table table-bordered list-table text-center" id="userTable">
               <tr>
                 <th><input type="checkbox"></th>
-                <th>ID</th>
+                <th>序号</th>
                 <th>鸽主名称</th>
                 <th>联系电话</th>
                 <th>地区</th>
@@ -42,7 +42,7 @@
 
               <tr v-for="(item, index) in listTable">
                 <td><input type="checkbox"></td>
-                <td>{{ index+1 }}</td>
+                <td>{{ (index+1) + (curr * 10) }}</td>
                 <td>{{ item.name }}</td>
                 <td>{{ item.tel }}</td>
                 <td>{{ item.addr }}</td>
@@ -70,70 +70,11 @@
 
             <!-- 分页 -->
             <div id="userPage"></div>
+            <hr class="hr15">
             <!-- 分页结束 -->
 
             <?php include "member-add.html"; ?>
             <?php include "member-input.html"; ?>
         </div>
-
-        <script>
-            var listData = [];
-
-            main();
-
-            /**
-             * 方法调用
-             */
-            function main() {
-                getUserInfo();
-                userPage();
-            }
-
-            /**
-             * 请求用户数据
-             */
-            function getUserInfo() {
-                $.ajax({
-                    url: `${app.serverUrl}admin.php/Admin/User/get_user_info`,
-                    data: {
-                        "page": 3
-                    },
-                    success: function(data) {
-                        console.log(data);
-                        listRend(data);
-                    }
-                });
-            }
-
-            /**
-             * vue 进行列表渲染
-             */
-            function listRend(data) {
-                var userTable = new Vue({
-                    el: "#userTable",
-                    data: {
-                        listTable: data
-                    }
-                });
-            }
-
-            /**
-             * 用户分页
-             */
-            function userPage() {
-                layui.use(['laypage', 'layer'], function() {
-                    var laypage = layui.laypage,
-                        layer = layui.layer;
-
-                    laypage.render({
-                        elem: 'userPage',
-                        count: 70,
-                        jump: function(obj){
-                            console.log(obj)
-                        }
-                    });
-                });
-            }
-        </script>
     </body>
 </html>

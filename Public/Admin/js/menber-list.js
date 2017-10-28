@@ -9,6 +9,8 @@ $(function () {
 	$(".list-td>a:nth-child(3)").click(() => {
 		listDel();
 	});
+
+	updataView();
 });
 
 /**
@@ -27,5 +29,65 @@ function listDel(confirmFn) {
 			confirmFn();
 		},
 		cancel: function() {}
+	});
+}
+
+/**
+ * 更新视图
+ */
+function updataView() {
+	var userTable = new Vue({
+		el: "#userTable",
+		data: {
+			listTable: [],
+			curr: 0
+		},
+		created: function() {
+			var that = this;
+
+			$.ajax({
+                url: `${app.serverUrl}admin.php/Admin/User`,
+                success: function(data) {
+
+                    that.userPage(data);
+                }
+			});
+		},
+		methods: {
+			// 获取用户信息
+			getUserInfo(curr) {
+				$.ajax({
+                    url: `${app.serverUrl}admin.php/Admin/User/get_user_info`,
+                    data: {
+                        "page": curr
+                    },
+                    success: function(data) {
+
+                    	// 设置数据
+                        userTable.listTable = data.data;
+                        // 设置总数据
+                        $("#sumData").text(`共有 ${data.count} 条数据`);
+                    }
+                });
+			},
+
+			// 用户分页
+			userPage(count) {
+				layui.use(['laypage', 'layer'], function() {
+                    var laypage = layui.laypage,
+                        layer = layui.layer;
+
+                    laypage.render({
+                        elem: 'userPage',
+                        count: count,
+                        jump: function(obj) {
+
+                            userTable.getUserInfo(obj.curr);
+                            userTable.curr = obj.curr-1;
+                        }
+                    });
+                });
+			}
+		}
 	});
 }
