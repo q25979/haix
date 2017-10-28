@@ -19,7 +19,13 @@ class IndexController extends Controller {
 
         $map['tel'] = $user_tel;
 
-        echo $user_tel;
+        cookie('user_tel', $user_tel, 600);
+
+        $user_tel_cookie = cookie('user_tel');
+
+        if ($user_tel_cookie) {
+            $map['tel'] = $user_tel_cookie;
+        }
 
         $user_data = $user->where($map)->page($page, '15')->select();
 

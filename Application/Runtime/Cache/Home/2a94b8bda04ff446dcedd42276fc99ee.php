@@ -123,8 +123,6 @@
 	<script>
 		var page = parseInt($("#pageCount").text());
 
-		console.log(<?php echo ($card_count); ?>);
-
 		$("#aBefore").click(() => {
 			if (page == 1) {
 				$.dialog({
