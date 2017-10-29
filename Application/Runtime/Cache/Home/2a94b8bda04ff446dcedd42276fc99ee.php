@@ -51,7 +51,7 @@
 					</tr><?php endforeach; endif; ?>
 			</table>
 
-			<img src="<?php echo ($card_img); ?>/images/haix-flag.png" class="xy-flag">
+			<img src="<?php echo ($card_img); ?>/images/haix-flag.png" oncontextmenu="return false;" onselectstart="return false;" class="xy-flag">
 
 			<div class="table-footer text-center clearfix">
 				<span class="pull-left"><strong>鸽主签名：</strong></span>
@@ -101,18 +101,16 @@
 	aria-labelledby="myLargeModalLabel"
 >
 		<div class="modal-dialog modal-lg" role="document">
-		<div class="modal-content">
-  			<h3 class="text-center card_title">参赛卡下载
-  				<span
-  					class="pull-right xy-icon__save"
-  					aria-hidden="true"
-  					id="saveImgSpan"
-  				>点击下载
-  				</span>
-  			</h3>
-  			<div id="img_container" class="text-center">
-  			</div>
-		</div>
+  		<div class="modal-content clearfix">
+    			<h3 class="text-center card_title">参赛卡下载
+              <span class="glyphicon glyphicon-remove pull-right returnIcon" data-dismiss="modal" aria-label="Close""></span>
+          </h3>
+    			<div id="img_container" class="text-center">
+    			</div>
+
+          <p class="hint_save">注：如果是手机登录请长按图片进行保存</p>
+          <button class="btn btn-primary xy-icon__save" id="saveImgSpan">点击下载</button>
+  		</div>
 		</div>
 </div>
 <!-- 参赛卡图片 -->
