@@ -11,6 +11,8 @@
 	<script type="text/javascript" src="/haix/Public/js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="/haix/Public/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/haix/Public/js/html2canvas.min.js"></script>
+	<script type="text/javascript" src="/haix/Public/lib/layui/layui.all.js"></script>
+	<script type="text/javascript" src="/haix/Public/js/config.js"></script>
 	<script type="text/javascript" src="/haix/Public/js/card.js"></script>
 	<script type="text/javascript" src="/haix/Public/js/jquery-confirm.min.js"></script>
 </head>
@@ -108,8 +110,8 @@
     			<div id="img_container" class="text-center">
     			</div>
 
-          <p class="hint_save">注：如果是手机登录请长按图片进行保存</p>
-          <button class="btn btn-primary xy-icon__save" id="saveImgSpan">点击下载</button>
+          <!-- <p class="hint_save">注：如果是手机登录请长按图片进行保存</p> -->
+          <a class="btn btn-primary xy-icon__save" id="saveImgSpan">点击下载</a>
   		</div>
 		</div>
 </div>

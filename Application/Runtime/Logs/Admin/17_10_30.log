@@ -1,0 +1,217 @@
+[ 2017-10-30T15:49:22+08:00 ] ::1 /haix/admin.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2017-10-30T15:49:22+08:00 ] ::1 /haix/admin.php/Admin/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001328s ]
+
+[ 2017-10-30T15:49:40+08:00 ] ::1 /haix/admin.php/Admin/Login/check_verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-10-30T15:49:40+08:00 ] ::1 /haix/admin.php/Admin/Login/verify?0.8983749449846059
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2017-10-30T15:49:43+08:00 ] ::1 /haix/admin.php/Admin/Login/check_verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+
+[ 2017-10-30T15:49:43+08:00 ] ::1 /haix/admin.php/Admin/Login/verify?0.8983749449846059?0.6390511483365566
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-10-30T15:49:47+08:00 ] ::1 /haix/admin.php/Admin/Login/check_verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-10-30T15:49:47+08:00 ] ::1 /haix/admin.php/Admin/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2017-10-30T15:49:59+08:00 ] ::1 /haix/admin.php/Admin/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001780s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.0509s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.0541s ]
+
+[ 2017-10-30T15:49:59+08:00 ] ::1 /haix/admin.php/Admin/User/get_user_info?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.0579s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user` LIMIT 0,10   [ RunTime:0.0495s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.0607s ]
+
+[ 2017-10-30T15:50:02+08:00 ] ::1 /haix/admin.php/Admin/User/get_user_info?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.0556s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user` LIMIT 10,10   [ RunTime:0.0542s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.0540s ]
+
+[ 2017-10-30T15:50:14+08:00 ] ::1 /haix/admin.php/Admin/User/get_user_info?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.0705s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user` LIMIT 0,10   [ RunTime:0.0688s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.0644s ]
+
+[ 2017-10-30T15:50:23+08:00 ] ::1 /haix/admin.php/Admin/User/get_user_info?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.0737s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user` LIMIT 10,10   [ RunTime:0.0765s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.0741s ]
+
+[ 2017-10-30T15:50:25+08:00 ] ::1 /haix/admin.php/Admin/User/get_user_info?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.0577s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user` LIMIT 0,10   [ RunTime:0.0606s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.0632s ]
+
+[ 2017-10-30T15:50:27+08:00 ] ::1 /haix/admin.php/Admin/User/get_user_info?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.0527s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user` LIMIT 10,10   [ RunTime:0.0529s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.0524s ]
+
+[ 2017-10-30T15:50:29+08:00 ] ::1 /haix/admin.php/Admin/User/get_user_info?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.0479s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user` LIMIT 0,10   [ RunTime:0.0479s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.0980s ]
+
+[ 2017-10-30T15:50:31+08:00 ] ::1 /haix/admin.php/Admin/User/get_user_info?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.0571s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user` LIMIT 10,10   [ RunTime:0.0467s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.0471s ]
+
+[ 2017-10-30T15:50:48+08:00 ] ::1 /haix/admin.php/Admin/User/get_user_info?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.0496s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user` LIMIT 0,10   [ RunTime:0.0480s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.0491s ]
+
+[ 2017-10-30T15:50:50+08:00 ] ::1 /haix/admin.php/Admin/User/get_user_info?page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `haix_user` [ RunTime:0.1083s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user` LIMIT 10,10   [ RunTime:0.0970s ]
+SQL: SELECT DISTINCT  `name`,`tel`,`addr` FROM `haix_user`  [ RunTime:0.1001s ]
+

@@ -12,7 +12,7 @@ return array(
 
 	// 数据库连接
 	'DB_TYPE'	=>	'mysql',
-	'DB_HOST'	=>	'localhost',
+	'DB_HOST'	=>	'47.95.255.97',
 	'DB_NAME'	=>	'haix',
 	'DB_USER'	=>	'root',
 	'DB_PWD'	=>	'004369',

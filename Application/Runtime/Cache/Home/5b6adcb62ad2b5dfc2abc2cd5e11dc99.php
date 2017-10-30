@@ -53,7 +53,7 @@
 
 	<script>
 		var __code = "";
-		var gWait = 0;	// 设置等待时间
+		var gWait = 60;	// 设置等待时间
 		var btnStatus = true;
 
 		$(function () {
@@ -71,11 +71,6 @@
 					success: function(data) {
 
 						var oCode = JSON.parse(data.code);
-
-						/*if (data.result.Code != "OK") {
-							layer.msg("今日获取短信已经达到上限,请明日再来", {icon: 5});
-							return;
-						}*/
 
 						// 获取验证码返回全局
 						__code = oCode.code;

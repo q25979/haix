@@ -59,11 +59,6 @@ function buildPath(canvas) {
 	// 加工image data，替换mime type
 	imgData = imgData.replace(_fixType(type),'image/octet-stream');
 
-	/**
-	 * 在本地进行文件保存
-	 * @param  {String} data     要保存到本地的图片数据
-	 * @param  {String} filename 文件名
-	 */
 	var saveFile = function(data, filename){
 	    var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
 	    save_link.href = data;
@@ -79,6 +74,4 @@ function buildPath(canvas) {
 	var filename = 'cards_' + (new Date()).getTime() + '.' + type;
 	// download
 	saveFile(imgData,filename);
-
-	console.log(filename);
 }

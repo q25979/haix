@@ -10,6 +10,8 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-confirm.min.js"></script>
     <script src="../lib/layui/layui.js"></script>
+    <script src="../lib/layui/layui.all.js"></script>
+    <script src="../js/xadmin.js"></script>
     <script src="../js/config.js"></script>
     <script src="js/menber-list.js"></script>
 
@@ -37,6 +39,11 @@
                 <th>鸽主名称</th>
                 <th>联系电话</th>
                 <th>地区</th>
+                <th>参赛鸽足环号</th>
+                <th>羽色</th>
+                <th>大团体</th>
+                <th>小团体</th>
+                <th>备注</th>
                 <th>操作</th>
               </tr>
 
@@ -46,8 +53,13 @@
                 <td>{{ item.name }}</td>
                 <td>{{ item.tel }}</td>
                 <td>{{ item.addr }}</td>
+                <td>{{ item.number }}</td>
+                <td>{{ item.color }}</td>
+                <td>{{ item.big_group }}</td>
+                <td>{{ item.small_group }}</td>
+                <td>{{ item.remarks }}</td>
                 <td class="list-td">
-                    <a href="#" title="录入参赛卡">
+                    <a v-on:click="openWindow(item.id)" title="编辑">
                         <span
                             class="glyphicon glyphicon-pencil"
                             data-toggle="modal"
@@ -55,15 +67,7 @@
                         >
                         </span>
                     </a>
-                    <a href="#" title="编辑">
-                        <span
-                            class="glyphicon glyphicon-wrench"
-                            data-toggle="modal"
-                            data-target=".bs-example-modal-sm"
-                        >
-                        </span>
-                    </a>
-                    <a href="#" title="删除"><span class="glyphicon glyphicon-trash"></span></a>
+                    <a @click="delMember(item.id)" title="删除"><span class="glyphicon glyphicon-trash"></span></a>
                 </td>
               </tr>
             </table>
@@ -74,7 +78,6 @@
             <!-- 分页结束 -->
 
             <?php include "member-add.html"; ?>
-            <?php include "member-input.html"; ?>
         </div>
     </body>
 </html>

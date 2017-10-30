@@ -6,12 +6,12 @@
 .xy-login {
 	width: 80%;
 	margin: 0 auto;
-	transform: translateY(50%);
+	transform: translateY(40%);
 	box-shadow: 1px 1px 20px #337AB7;
 }
 .card-title {
 	position: relative;
-	top: 130px;
+	top: 100px;
 	text-shadow: 2px 2px 20px #fff;
 }
 
