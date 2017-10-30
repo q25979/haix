@@ -74,7 +74,7 @@
 
 						// 获取验证码返回全局
 						__code = oCode.code;
-						console.log(__code);
+						console.log(data);
 					},
 					error: function(data) {
 						console.log("error！");

@@ -33,6 +33,28 @@ function listDel(confirmFn) {
 }
 
 /**
+ * 添加用户
+ */
+function addUser() {
+	var w = ($(window).width()*0.9);;
+	var h = ($(window).height() - 50);
+
+	var addWindow = layer.open({
+        type: 2,
+        area: [w+'px', h +'px'],
+        fix: false, //不固定
+        maxmin: true,
+        shadeClose: true,
+        offset: '10px',
+        shade:0.4,
+        title: "添加用户",
+        content: 'member-add.html'
+    });
+
+    layer.full(addWindow);
+}
+
+/**
  * 更新视图
  */
 function updataView() {
@@ -145,7 +167,19 @@ function updataView() {
 					confirmButtonClass: 'btn-info',
 					cancelButtonClass: 'btn-danger',
 					confirm: function() {
-						console.log(id);
+						layer.load();
+						$.ajax({
+							url: `${app.serverUrl}admin.php/Admin/User/del_user`,
+							type: "POST",
+							data: {
+								id: id
+							},
+							success: function(data) {
+								if (parseInt(data) != 0) {
+									window.location.reload();
+								}
+							}
+						});
 					},
 					cancel: function() {}
 				});

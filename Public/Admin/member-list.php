@@ -22,12 +22,7 @@
             <nav class="navbar navbar-default">
               <button class="btn btn-danger list-btn" id="selectDel">批量删除</button>
 
-              <button
-                class="btn btn-success list-btn"
-                data-toggle="modal"
-                data-target=".bs-example-modal-sm">
-                添加
-              </button>
+              <button class="btn btn-success list-btn" onclick="addUser()">添加</button>
 
               <span class="pull-right" id="sumData"></span>
             </nav>
@@ -76,8 +71,6 @@
             <div id="userPage"></div>
             <hr class="hr15">
             <!-- 分页结束 -->
-
-            <?php include "member-add.html"; ?>
         </div>
     </body>
 </html>

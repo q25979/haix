@@ -8,6 +8,7 @@ class IndexController extends Controller {
 
     	$this->assign('welcome_url', $welcome_url);
     	$this->assign('public_url', C('PUBLIC_URL'));
+        $this->assign('domain_url', C('DOMAIN_NAME'));
 
     	// 验证登录信息
     	$this->verify_info();

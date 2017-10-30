@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/haix/Public/css/font.css" />
     <link rel="stylesheet" type="text/css" href="/haix/Public/css/xadmin.css" />
+    <link rel="stylesheet" type="text/css" href="/haix/Public/lib/css/layui/layui.css" />
 
     <script type="text/javascript" src="/haix/Public/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/haix/Public/js/xadmin.js"></script>
@@ -23,7 +24,7 @@
     <!-- 顶部开始 -->
     <!-- 顶部开始 -->
 <div class="container">
-    <div class="logo"><a href="./admin.php">后台管理</a></div>
+    <div class="logo"><a href="#">后台管理</a></div>
     <div class="left_open">
         <i title="展开左侧栏" class="iconfont">&#xe699;</i>
     </div>
@@ -32,12 +33,12 @@
       <li class="layui-nav-item">
         <a href="javascript:;">admin</a>
         <dl class="layui-nav-child"> <!-- 二级菜单 -->
-          <dd><a onclick="x_admin_show('个人信息','http://www.baidu.com')">个人信息</a></dd>
-          <dd><a onclick="x_admin_show('切换帐号','http://www.baidu.com')">切换帐号</a></dd>
-          <dd><a href="./login.html">退出</a></dd>
+          <!-- <dd><a onclick="x_admin_show('个人信息','http://www.baidu.com')">个人信息</a></dd> -->
+          <!-- <dd><a onclick="x_admin_show('切换帐号','http://www.baidu.com')">切换帐号</a></dd> -->
+          <dd><a href="<?php echo ($domain_url); ?>admin.php">退出</a></dd>
         </dl>
       </li>
-      <li class="layui-nav-item to-index"><a href="/">前台首页</a></li>
+      <li class="layui-nav-item to-index"><a href="<?php echo ($domain_url); ?>">前台首页</a></li>
     </ul>
 
 </div>
@@ -62,7 +63,6 @@
                     <a _href="<?php echo ($public_url); ?>/Admin/member-list.php">
                         <i class="iconfont">&#xe6a7;</i>
                         <cite>会员列表</cite>
-
                     </a>
                 </li>
             </ul>

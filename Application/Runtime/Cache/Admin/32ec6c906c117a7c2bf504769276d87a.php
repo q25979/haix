@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/haix/Public/css/font.css" />
     <link rel="stylesheet" type="text/css" href="/haix/Public/css/xadmin.css" />
+    <link rel="stylesheet" type="text/css" href="/haix/Public/lib/css/layui.css" />
 
     <script type="text/javascript" src="/haix/Public/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/haix/Public/js/xadmin.js"></script>

@@ -4,6 +4,11 @@ use Think\Controller;
 
 class UserController extends Controller {
     public function index(){
+        if(!IS_AJAX) {
+            echo "非法操作!";
+            return;
+        }
+
         $user = M("User");
 
         // $data_count = count($user->distinct(true)->field('name, tel, addr')->select());
@@ -78,4 +83,18 @@ class UserController extends Controller {
     }
 
     // 按id删除用户
+    public function del_user() {
+        if (!IS_POST) {
+            echo "非法操作!";
+            return;
+        }
+
+        $user = M("User");
+
+        $map['id'] = I('post.id');
+
+        $data = $user->where($map)->delete();
+
+        $this->ajaxReturn($data);
+    }
 }
