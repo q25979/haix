@@ -9,10 +9,12 @@ return array(
 
 	// 数据库连接
 	'DB_TYPE'	=>	'mysql',
-	'DB_HOST'	=>	'47.95.255.97',
+	// 'DB_HOST'	=>	'47.95.255.97',
+	'DB_HOST'	=>	'121.41.50.143',
 	'DB_NAME'	=>	'haix',
 	'DB_USER'	=>	'root',
-	'DB_PWD'	=>	'004369',
+	// 'DB_PWD'	=>	'004369',
+	'DB_PWD'	=>	'1f4e12c2c6',
 	'DB_PREFIX'	=>	'haix_',
 
 	// 'TMPL_CACHE_ON'=>false,

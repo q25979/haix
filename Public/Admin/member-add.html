@@ -77,10 +77,43 @@
 
     <div class="layui-form-item re-btn">
         <div class="layui-input-block">
-          <button class="layui-btn" lay-submit lay-filter="formDemo">用户添加</button>
+          <button class="layui-btn" lay-submit lay-filter="formDemo" onclick="addUser()">用户添加</button>
           <button type="reset" class="layui-btn layui-btn-primary">清空数据</button>
         </div>
     </div>
   </form>
+
+  <script>
+    function addUser() {
+      var load = layer.load();
+      $.ajax({
+        url: `${app.serverUrl}admin.php/Admin/User/add_user`,
+        type: "POST",
+        async: false,
+        data: {
+          id: $("#id").val(),
+          name: $("#name").val(),
+          tel: $("#tel").val(),
+          addr: $("#addr").val(),
+          number: $("#number").val(),
+          color: $("#color").val(),
+          big_group: $("#big_group").val(),
+          small_group: $("#small_group").val(),
+          remarks: $("#remarks").val()
+        },
+        success: function(data) {
+          if (parseInt(data) != 0) {
+            layer.msg('添加成功', {icon: 1});
+          } else {
+            layer.msg('添加失败', {icon: 5});
+          }
+        },
+        complete: function(data) {
+          layer.close(load);
+          parent.location.reload();
+        }
+      });
+    }
+  </script>
 </body>
 </html>

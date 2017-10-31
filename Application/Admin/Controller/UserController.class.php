@@ -97,4 +97,26 @@ class UserController extends Controller {
 
         $this->ajaxReturn($data);
     }
+
+    // 增加用户
+    public function add_user() {
+        if (!IS_POST) {
+            echo "非法操作！";
+        }
+
+        $user = M("User");
+
+        $data['name'] = I('post.name');
+        $data['tel'] = I('post.tel');
+        $data['addr'] = I('post.addr');
+        $data['number'] = I('post.number');
+        $data['color'] = I('post.color');
+        $data['small_group'] = I('post.small_group');
+        $data['big_group'] = I('post.big_group');
+        $data['remarks'] = I('post.remarks');
+
+        $result = $user->data($data)->add();
+
+        $this->ajaxReturn($result);
+    }
 }
