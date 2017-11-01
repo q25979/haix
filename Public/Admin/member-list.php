@@ -44,6 +44,7 @@
 
               <tr v-for="(item, index) in listTable">
                 <td><input type="checkbox" class="select_box"></td>
+                <td style="display: none;" class="user_id">{{ item.id }}</td>
                 <td>{{ (index+1) + (curr * 10) }}</td>
                 <td>{{ item.name }}</td>
                 <td>{{ item.tel }}</td>

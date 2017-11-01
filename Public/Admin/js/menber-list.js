@@ -2,12 +2,33 @@ $(function () {
 
 	// 批量删除
 	$("#selectDel").click(() => {
-		listDel();
-	});
+		listDel(function () {
+			var flag = [];
 
-	// 单个删除
-	$(".list-td>a:nth-child(3)").click(() => {
-		listDel();
+			var load = layer.load();
+			$("#userTable td :checkbox").each((index) => {
+				flag[index] = $($("#userTable td :checkbox")[index]).prop("checked");
+
+				if (flag[index] == true || flag[index] == "true") {
+					var id = $($(".user_id")[index]).text();
+
+					console.log(id);
+					$.ajax({
+						url: `${app.serverUrl}admin.php/Admin/User/del_user`,
+						// async: false,
+						data: {
+							id: id
+						},
+						type: "POST",
+						success: function(data) {
+							console.log(data);
+						}
+					});
+				}
+			});
+
+			window.location.reload();
+		});
 	});
 
 	updataView();
@@ -124,7 +145,7 @@ function updataView() {
                 });
 			},
 
-			// 批量删除
+			// 全选与全不选
 			mostSelect() {
 				$("#allSelect").click(() => {
 					// 全选与全不选

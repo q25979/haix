@@ -9,7 +9,6 @@ use Aliyun\Api\Sms\Request\V20170525\SendSmsRequest;
 
 class LoginController extends Controller {
     public function index() {
-
         $this->display();
     }
 
